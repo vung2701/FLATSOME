@@ -36,7 +36,11 @@ html {
     font-family: Lato,sans-serif;
     text-rendering: optimizeLegibility;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.6;
+}
+body {
+    color: var(--text-color);
+    background-color: #f3f3f3;
 }
 
 
@@ -48,15 +52,21 @@ html {
     margin: 0 auto;
 }
 
+.inner2 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
 /* Tag */
 section {
-    padding-top: 151px;
-    padding-bottom: 151px;
     display: flex;
     position: relative;
 }
-h1 {
+h1,h2,h3 {
     line-height: 1.3;
+    font-weight: 700;
 }
 ul,ol {
     list-style: none;
@@ -76,6 +86,8 @@ button,
 select,
 textarea {
     outline: none;
+    background-color: transparent;
+    border: none;
 }
 
 
