@@ -3,6 +3,9 @@
     line-height: 1.2;
 }
 
+.hide {
+    display: none;
+}
 /* position */
 .relative {
     position: relative;
@@ -36,6 +39,11 @@
 }
 
 /* padding */
+
+.p-top-bottom-10-15 {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
 
 .p-top-50 {
     padding-top: 50px;
@@ -73,6 +81,10 @@
 
 .m-top-22 {
     margin-top: 22px;
+}
+
+.m-bottom-20 {
+    margin-bottom: 20px;
 }
 
 /* Font size */
