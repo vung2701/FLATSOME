@@ -5,7 +5,7 @@
     --text-color: #555;
     --text-trong-color: #777;
     --white-color: #fff;
-    --border-color:  rgba(255,255,255,.2);
+    --border-color:  hsla(0, 0%, 100%, 0.2);
 }
 
 * {
@@ -15,19 +15,19 @@
 }
 
 @font-face {
-    font-family: Lato, sans-serif;
+    font-family: Lato;
     src: url(../vendors/font/Lato-Light.ttf);
     font-weight: 300;
 }
 
 @font-face {
-    font-family: Lato, sans-serif;
+    font-family: Lato;
     src: url(../vendors/font/Lato-Regular.ttf);
     font-weight: 400;
 }
 
 @font-face {
-    font-family: Lato, sans-serif;
+    font-family: Lato;
     src: url(../vendors/font/Lato-Bold.ttf);
     font-weight: 700;
 }
@@ -37,6 +37,7 @@ html {
     text-rendering: optimizeLegibility;
     font-size: 16px;
     line-height: 1.6;
+    scroll-behavior: smooth;
 }
 body {
     color: var(--text-color);
@@ -90,7 +91,6 @@ textarea {
     border: none;
 }
 
-
 /* Icon */
 @font-face {
     font-family: 'Icon';
@@ -118,6 +118,10 @@ textarea {
     content: "";
 }
 
+.icon-angle-up:before {
+    content: "";
+}
+
 .icon-heart:before {
     content: "";
 }
@@ -138,7 +142,14 @@ textarea {
     content: "";
 }
 
-
 .icon-search:before {
     content: "";
+}
+
+.icon-shopping-basket:before {
+    content: "";
+}
+
+.icon-menu:before {
+    content: "";
 }

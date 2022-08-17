@@ -18,6 +18,7 @@
 </head>
 <body>
     <div id="app" class="wrapper">
+
         <header>
             <div class="header-wrapper">
                 <div class="header-top background-basic">
@@ -26,7 +27,7 @@
                             <strong class="uppercase text-white">Add anything here or just remove it...</strong>
                         </div>
                         
-                        <ul class="header-top__nav d-flex-between-center flex-right">
+                        <ul class="header-top__nav d-flex-between-center flex-right hide-on-mobile-tablet">
                             <li class="header-top__item">
                                 <a href="" class="header-top__link text-white-blur">About</a>
                             </li>
@@ -47,11 +48,12 @@
                                     <i class="icon-envelop icon-left"></i>
                                     Newsletter
                                 </a>
+
                             </li>
                             <li class="header-top__item">
                                 <a href="" class="header-top__link text-white-blur">
                                     Languages
-                                    <i class="icon-angle-down"></i>
+                                    <i class="icon-angle-down header-top__icon down"></i>
                                 </a>
                             </li>
                             <li class="header-top__item">
@@ -80,8 +82,271 @@
                         </ul> 
                     </div>
                 </div>
+
                 <div class="header-bottom">
                     <div class="header-bottom__content inner1 d-flex-between-center">
+
+                        <!-- Mobile Nav -->
+                        <div class="mobile-header__menu hide-on-pc">
+                            <button class="mobile-menu__btn" onclick="openMobileMenu()">
+                                <i class="icon-menu"></i>
+                            </button>
+                            <nav class="mobile-header__nav">
+                                <ul class="mobile-header__list">
+                                    <li class="mobile-header__item">
+                                        <div class="mobile-search__form">
+                                            <input type="text" class="mobile-search__input" onkeyup="searchNav()" placeholder="Search...">
+                                            <button class="mobile-search__btn">
+                                                <i class="icon-search big-icon"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="mobile-header__item">
+                                        <a href="" class="mobile-header__link">DEMOS</a>
+                                        <button class="up-down__btn">
+                                            <i class="icon-angle-down"></i>
+                                        </button>
+
+                                        <nav class="mobile-sub__nav">
+                                            <a href="" class="mobile-sub__heading">SHOP DEMOS</a>
+                                            <ul class="mobile-sub__list">
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Classic Shop</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Simple Slider</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Fullscreen Fashion</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Video Cover</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Slider Cover</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Grid Style 1</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Grid Style 2</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Grid Style 3</a>
+                                                </li>
+                                            </ul>
+
+                                            <a href="" class="mobile-sub__heading">MORE SHOP DEMOS</a>
+                                            <ul class="mobile-sub__list">
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Mega Shop</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Cute Shop</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Sport Shop</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Vendor Shop</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Parallax Shop</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Big Sale</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Sale Countdown</a>
+                                                </li>
+                                            </ul>
+
+                                            <a href="" class="mobile-sub__heading">BUSINESS DEMOS</a>
+                                            <ul class="mobile-sub__list">
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Agency</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Corporate</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Freelancer</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Explore</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Lifestyle</a>
+                                                </li>
+                                            </ul>   
+                                        </nav>  
+                                    </li>
+                                    <li class="mobile-header__item">
+                                        <a href="" class="mobile-header__link">FEATURES</a>
+                                        <button class="up-down__btn">
+                                            <i class="icon-angle-down"></i>
+                                        </button>
+
+                                        <nav class="mobile-sub__nav">
+                                            <a href="" class="mobile-sub__heading">FEATURES</a>
+                                            <ul class="mobile-sub__list">                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Code Features</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link hightlight__btn btn--new">What's New</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link hightlight__btn btn--popular">UX Builder</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link hightlight__btn btn--popular">Header Designer</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link  hightlight__btn btn--new">Flatsome Studio</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Fast Performance</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Parallax Scrolling</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Single Page Navigation</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Sticky Sections</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Getting Started</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Footer Features</a>
+                                                </li>
+                                            </ul>
+
+                                            <a href="" class="mobile-sub__heading">MORE</a>
+                                            <ul class="mobile-sub__list">
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Blog Features</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Portfolio Features</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Blocks Element</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Videos & Docs</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link hightlight__btn btn--hot">Customer Reviews</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Element Overview</a>
+                                                </li>
+                                            </ul>
+
+                                            <a href="" class="mobile-sub__heading">WOOCOMMERCE</a>
+                                            <ul class="mobile-sub__list">
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Category Features</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Product Features</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Catalogue Mode</a>
+                                                </li>
+                                            </ul>   
+                                        </nav>      
+                                    </li>
+                                    <li class="mobile-header__item">
+                                        <a href="" class="mobile-header__link">SHOP</a>
+                                        <button class="up-down__btn">
+                                            <i class="icon-angle-down"></i>
+                                        </button>
+
+                                        <nav class="mobile-sub__nav">
+                                            <ul class="mobile-sub__list">
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">WooCommerce</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        
+                                    </li>
+                                    <li class="mobile-header__item">
+                                        <a href="" class="mobile-header__link">PAGES</a>
+                                        <button class="up-down__btn">
+                                            <i class="icon-angle-down"></i>
+                                        </button>
+
+                                        <nav class="mobile-sub__nav">
+                                            <ul class="mobile-sub__list">
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Portfolio</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">About</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Contact/a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Our Stores</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Maintenance</a>
+                                                </li>
+                                                <li class="mobile-sub__item">
+                                                    <a href="" class="mobile-sub__link">Page layouts</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </li>
+                                    <li class="mobile-header__item">
+                                        <a href="" class="mobile-header__link">BLOG</a>
+                                    </li>
+                                    <li class="mobile-header__item">
+                                        <a href="" class="mobile-header__link">ELEMENT</a>
+                                    </li>
+                                    <li class="mobile-header__item">
+                                        <a href="" class="mobile-header__link">LOGIN</a>
+                                    </li>
+                                    <li class="mobile-header__item">
+                                        <a href="" class="mobile-header__link">
+                                            <i class="icon-envelop mobile-icon-left"></i>
+                                            NEWSLETTER
+                                        </a>
+                                    </li>
+                                    <li class="mobile-header__item">
+                                        <div class="mobile-header__socials">
+                                            <span><a href="" class="mobile-header__social">
+                                                <i class="icon-facebook big-icon"></i>
+                                            </a></span>
+                                            <span><a href="" class="mobile-header__social">
+                                                <i class="icon-instagram big-icon"></i>
+                                            </a></span>
+                                            <span><a href="" class="mobile-header__social">
+                                                <i class="icon-twitter big-icon"></i>
+                                            </a></span>
+                                            <span><a href="" class="mobile-header__social">
+                                                <i class="icon-envelop big-icon"></i>
+                                            </a></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <!-- Overlay -->
+                            <div class="mobile-menu-overlay overlay" onclick="closeMobileMenu()">
+                                <button title="Close (Esc)" type="button" class="close__btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                                        <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                </button>
+                            </div>
+                        </div>
+
                         <div id="logo" class="header-bottom__logo">
                             <a href="" class="header-bottom__logo--link text-white">
                                 <img src="./vendors/img/logo-light.png" alt="" class="header-logo__img">
@@ -89,7 +354,7 @@
                             </a>
                         </div>
     
-                        <ul class="header-bottom__nav d-flex-between-center flex-left">
+                        <ul class="header-bottom__nav d-flex-between-center flex-left hide-on-mobile-tablet">
                             <li class="header-bottom__item">
                                 <a href="" class="header-bottom__link text-white-blur">
                                     <i class="icon-search text-white big-icon"></i>
@@ -98,19 +363,19 @@
                             <li class="header-bottom__item">
                                 <a href="" class="header-bottom__link text-white-blur">
                                     DEMOS
-                                    <i class="icon-angle-down"></i>
+                                    <i class="icon-angle-down header__icon-down"></i>
                                 </a>
                             </li>
                             <li class="header-bottom__item">
                                 <a href="" class="header-bottom__link text-white">
                                     FEATURES
-                                    <i class="icon-angle-down"></i>
+                                    <i class="icon-angle-down header__icon-down"></i>
                                 </a>
                             </li>
                             <li class="header-bottom__item">
                                 <a href="" class="header-bottom__link text-white-blur">
                                     SHOP
-                                    <i class="icon-angle-down"></i>
+                                    <i class="icon-angle-down header__icon-down"></i>
                                 </a>
                             </li>
                             <li class="header-bottom__item">
@@ -119,7 +384,7 @@
                             <li class="header-bottom__item">
                                 <a href="" class="header-bottom__link text-white-blur">
                                     PAGE
-                                    <i class="icon-angle-down"></i>
+                                    <i class="icon-angle-down header__icon-down"></i>
                                 </a>
                             </li>
                             <li class="header-bottom__item">
@@ -131,15 +396,54 @@
                         </ul>
     
                         <ul class="header-bottom__right d-flex-between-center">
-                            <li class="header-bottom__item">
-                                <a href="" class="header-bottom__link text-white-blur">
+                            <li class="header-bottom__item hide-on-mobile-tablet">
+                                <a href="javascript:void(0)" onclick="openAccountForm()" class="header-bottom__link text-white-blur">
                                     <span>LOGIN</span>
                                 </a>
                             </li>
+
+                            <!-- Overlay -->
+                            <div class="account-overlay overlay" onclick="closeAccount()">
+                                <button title="Close (Esc)" type="button" class="close__btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                                        <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                </button>
+                            </div>
+
+                            <!-- Login Form -->
+                            <div class="account__container">
+                                <div class="account__row">
+                                    <form action="" class="account__form">
+                                        <h3 class="account__heading">LOGIN</h3>
+                                        <label for="" class="account__label">Username or email address <span>*</span></label>
+                                        <input type="text" class="account__input">
+                                        <label for="" class="account__label">Password <span>*</span></label>
+                                        <input type="text" class="account__input">
+                                        <div class="account__label">
+                                            <input type="checkbox" class="account__checkbox" name="">
+                                            <span> Remember me</span>
+                                        </div>
+                                        <button class="account__btn">LOG IN</button>
+                                        <div class="account__support">
+                                            <a href="#">Lost your password?</a>
+                                        </div>
+                                    </form>
+                                    <form action="" class="account__form">
+                                        <h3 class="account__heading">REGISTER</h3>
+                                        <label for="" class="account__label">Email address <span>*</span></label>
+                                        <input type="text" class="account__input">
+                                        <label for="" class="account__label">Password <span>*</span></label>
+                                        <input type="text" class="account__input">
+                                        <p class="account__text">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.</p>
+                                        <button class="account__btn">REGISTER</button>
+                                    </form>
+                                </div>
+                            </div>
+
                             <li class="header-bottom__divider"></li>
                             <li class="header-bottom__item">
                                 <a href="" class="header-bottom__link text-white-blur cart-item">
-                                    <span class="header-cart__title">CART/ <span class="cart-price">$0,00</span> </span>
+                                    <span class="header-cart__title hide-on-mobile-tablet">CART/ <span class="cart-price">$0,00</span> </span>
                                     <span class="cart-icon image-icon">
                                         <strong>0</strong>
                                     </span>
@@ -157,7 +461,7 @@
                 <div class="section-intro__bg bg-fill"></div>
 
                 <div class="inner1">
-                    <div class="common-dark__box">
+                    <div class="common-dark__box reveal">
                         <div class="section-intro__content common-dark__content">
                             <div class="section-intro__logo common-dark__logo">
                                 <img src="./vendors/img/logo2.png" alt="">
@@ -168,7 +472,7 @@
                         </div>
                     </div>
     
-                    <button class="section-intro__scroll-btn"><i class="icon-angle-down"></i></button>
+                    <button class="section-intro__scroll-btn" onclick="scrollIntro()"><i class="icon-angle-down"></i></button>
                 </div>
             </section>
 
@@ -188,7 +492,7 @@
                             </p>
                         </div>
     
-                        <div class="section-amazing__img">
+                        <div class="section-amazing__img reveal">
                             <img src="./vendors/img/amazing.jpg" alt="">
                         </div>
                     </div>
@@ -197,7 +501,7 @@
 
             <!-- Reasons -->
             <section id="section-reasons">
-                <div class="section-resons__bg p-top-bottom-46">
+                <div class="section-reasons__bg p-top-bottom-46">
                     <div class="inner1">
                         <div class="common-title__line-box">
                             <h3 class="common-title__line">
@@ -241,7 +545,7 @@
                 </div>
             </section>
 
-            <!-- Demos -->
+            <!-- Demos Text -->
             <section id="section-demos">
                 <div class="inner1">
                     <div class="common-title__box section-demos__box p-top-60">
@@ -255,7 +559,7 @@
                 </div>
             </section>
            
-            <!-- Shop -->
+            <!-- Shop Demos-->
             <section id="section-shop">
                 <div class="inner1">
                     <div class="common-title__line-box">
@@ -269,8 +573,8 @@
                     <ul class="common-product__list">
                         <li class="common-product__item has-hover-1">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/shop-1.jpg" alt="">
                                     </div>
 
@@ -284,8 +588,8 @@
                         </li>
                         <li class="common-product__item has-hover-1">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/shop-2.jpg" alt="">
                                     </div>
 
@@ -300,8 +604,8 @@
                         </li>
                         <li class="common-product__item has-hover-1">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/shop-3.jpg" alt="">
                                     </div>
 
@@ -316,8 +620,8 @@
                         </li>
                         <li class="common-product__item has-hover-1">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/shop-4.jpg" alt="">
                                     </div>
 
@@ -332,8 +636,8 @@
                         </li>
                         <li class="common-product__item has-hover-1">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/shop-5.jpg" alt="">
                                     </div>
 
@@ -348,8 +652,8 @@
                         </li>
                         <li class="common-product__item has-hover-1">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/shop-6.jpg" alt="">
                                     </div>
 
@@ -364,8 +668,8 @@
                         </li>
                         <li class="common-product__item has-hover-1">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/shop-7.jpg" alt="">
                                     </div>
 
@@ -380,8 +684,8 @@
                         </li>
                         <li class="common-product__item has-hover-1">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/shop-8.jpg" alt="">
                                     </div>
 
@@ -396,8 +700,8 @@
                         </li>
                         <li class="common-product__item has-hover-1">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/shop-9.jpg" alt="">
                                     </div>
 
@@ -412,8 +716,8 @@
                         </li>
                         <li class="common-product__item has-hover-1">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/shop-10.jpg" alt="">
                                     </div>
 
@@ -427,8 +731,8 @@
                         </li>
                         <li class="common-product__item has-hover-1">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/shop-11.jpg" alt="">
                                     </div>
 
@@ -442,8 +746,8 @@
                         </li>
                         <li class="common-product__item has-hover-1">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/shop-12.jpg" alt="">
                                     </div>
 
@@ -457,8 +761,8 @@
                         </li>
                         <li class="common-product__item has-hover-1">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/shop-13.jpg" alt="">
                                     </div>
 
@@ -472,8 +776,8 @@
                         </li>
                         <li class="common-product__item has-hover-1">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/shop-14.jpg" alt="">
                                     </div>
 
@@ -487,8 +791,8 @@
                         </li>
                         <li class="common-product__item has-hover-1">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/shop-15.jpg" alt="">
                                     </div>
 
@@ -504,7 +808,7 @@
                 </div>
             </section>
 
-            <!-- Business -->
+            <!-- Business Demos-->
             <section id="section-business">
                 <div class="inner1 p-bottom-60">
                     <div class="common-title__line-box">
@@ -518,8 +822,8 @@
                     <ul class="common-product__list">
                         <li class="common-product__item has-hover-1">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/business-1.jpg" alt="">
                                     </div>
     
@@ -533,8 +837,8 @@
                         </li>
                         <li class="common-product__item has-hover-1">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/business-2.jpg" alt="">
                                     </div>
     
@@ -549,8 +853,8 @@
                         </li>
                         <li class="common-product__item has-hover-1">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/business-3.jpg" alt="">
                                     </div>
     
@@ -565,8 +869,8 @@
                         </li>
                         <li class="common-product__item has-hover-1">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/business-4.jpg" alt="">
                                     </div>
     
@@ -581,8 +885,8 @@
                         </li>
                         <li class="common-product__item has-hover-1">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/coming_soon.jpg" alt="">
                                     </div>
     
@@ -597,8 +901,8 @@
                         </li>
                         <li class="common-product__item has-hover-1">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/coming_soon.jpg" alt="">
                                     </div>
     
@@ -619,7 +923,7 @@
             <section id="section-dark" class="relative">
                 <div class="section-dark__bg bg-fill"></div>
 
-                <div class="section-dark__content inner1 d-flex-center">
+                <div class="section-dark__content inner1 d-flex-center reveal">
                     <div class="common-dark__box">
                         <div class="common-dark__content">
                             <div class="common-dark__logo section-dark__logo">
@@ -632,6 +936,7 @@
                         </div>
                     </div>
                 </div>
+
             </section>
 
             <!-- Show case -->
@@ -647,278 +952,571 @@
                         <a href="#" class="common-btn section-showcase__btn">OPEN SHOWCASE</a>
                     </div>
 
-                    <ul class="common-product__list relative section-showcase__list p-bottom-30">
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                    <ul class="common-product__list section-showcase__list p-bottom-30">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="1">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-1.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="2">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-2.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="3">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-3.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="4">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-4.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="5">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-5.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="6">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-6.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="7">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-7.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="8">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-8.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="9">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-9.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="10">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-10.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="11">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-11.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="12">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-12.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="13">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-13.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="14">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-14.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="15">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-15.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="16">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-16.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="17">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-17.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="18">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-18.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="19">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-19.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="20">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-20.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="21">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-21.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="22">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-22.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="23">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-23.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="24">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-24.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="25">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-25.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="26">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-26.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="27">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-27.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="28">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-28.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                        <li class="common-product__item reveal has-hover-1 section-showcase__item" slideId="29">
+                            <a href="javascript:void(0)" class="common-product__link">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/showcase-29.jpg" alt="">
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li class="common-product__item">
-                            <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
-                                        <img src="./vendors/img/showcase-30.jpg" alt="">
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
                     </ul>
+                </div>
+
+                <!-- Light Box -->
+                <ul class="lightbox__list">
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-1.jpg" alt="">
+                                    <div class="lightbox__number">1 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-2.jpg" alt="">
+                                    <div class="lightbox__number">2 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-3.jpg" alt="">
+                                    <div class="lightbox__number">3 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-4.jpg" alt="">
+                                    <div class="lightbox__number">4 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-5.jpg" alt="">
+                                    <div class="lightbox__number">5 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-6.jpg" alt="">
+                                    <div class="lightbox__number">6 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-7.jpg" alt="">
+                                    <div class="lightbox__number">7 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-8.jpg" alt="">
+                                    <div class="lightbox__number">8 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-9.jpg" alt="">
+                                    <div class="lightbox__number">9 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-10.jpg" alt="">
+                                    <div class="lightbox__number">10 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-11.jpg" alt="">
+                                    <div class="lightbox__number">11 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-12.jpg" alt="">
+                                    <div class="lightbox__number">12 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-13.jpg" alt="">
+                                    <div class="lightbox__number">13 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-14.jpg" alt="">
+                                    <div class="lightbox__number">14 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-15.jpg" alt="">
+                                    <div class="lightbox__number">15 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-16.jpg" alt="">
+                                    <div class="lightbox__number">16 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-17.jpg" alt="">
+                                    <div class="lightbox__number">17 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-18.jpg" alt="">
+                                    <div class="lightbox__number">18 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-19.jpg" alt="">
+                                    <div class="lightbox__number">19 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-20.jpg" alt="">
+                                    <div class="lightbox__number">20 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-21.jpg" alt="">
+                                    <div class="lightbox__number">21 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-22.jpg" alt="">
+                                    <div class="lightbox__number">22 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-23.jpg" alt="">
+                                    <div class="lightbox__number">23 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-24.jpg" alt="">
+                                    <div class="lightbox__number">24 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-25.jpg" alt="">
+                                    <div class="lightbox__number">25 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-26.jpg" alt="">
+                                    <div class="lightbox__number">26 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-27.jpg" alt="">
+                                    <div class="lightbox__number">27 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-28.jpg" alt="">
+                                    <div class="lightbox__number">28 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="lightbox__item">
+                        <a href="javascript:void(0)" class="lightbox__link">
+                            <div class="lightbox__box">
+                                <div class="lightbox__img">
+                                    <img src="./vendors/img/showcase-29.jpg" alt="">
+                                    <div class="lightbox__number">29 of 29</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Overlay -->
+                <div class="lightbox-overlay overlay" onclick="closeLightBox()">
+                    <button title="Close (Esc)" type="button" class="close__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                            <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    </button>
                 </div>
             </section>
 
@@ -936,108 +1534,147 @@
                     <ul class="section-features__list d-flex">
                         <li class="section-features__item">
                             <a href="" class="section-features__link">
-                                <img src="./vendors/img/features-1.jpg" alt="">
+                                <div class="section-features__picture">
+                                    <img src="./vendors/img/features-1.jpg" alt="">
+                                </div>
                             </a>
                         </li>
                         <li class="section-features__item">
                             <a href="" class="section-features__link">
-                                <img src="./vendors/img/features-2.jpg" alt="">
+                                <div class="section-features__picture">
+                                    <img src="./vendors/img/features-2.jpg" alt="">
+                                </div>
                             </a>
                         </li>
                         <li class="section-features__item">
                             <a href="" class="section-features__link">
-                                <img src="./vendors/img/features-3.jpg" alt="">
+                                <div class="section-features__picture">
+                                    <img src="./vendors/img/features-3.jpg" alt="">
+                                </div>
                             </a>
                         </li>
                         <li class="section-features__item">
                             <a href="" class="section-features__link">
-                                <img src="./vendors/img/features-4.jpg" alt="">
+                                <div class="section-features__picture">
+                                    <img src="./vendors/img/features-4.jpg" alt="">
+                                </div>
                             </a>
                         </li>
                         <li class="section-features__item">
                             <a href="" class="section-features__link">
-                                <img src="./vendors/img/features-5.jpg" alt="">
+                                <div class="section-features__picture">
+                                    <img src="./vendors/img/features-5.jpg" alt="">
+                                </div>
                             </a>
                         </li>
                         <li class="section-features__item">
                             <a href="" class="section-features__link">
-                                <img src="./vendors/img/features-6.png" alt="">
+                                <div class="section-features__picture">
+                                    <img src="./vendors/img/features-6.png" alt="">
+                                </div>
                             </a>
                         </li>
                         <li class="section-features__item">
                             <a href="" class="section-features__link">
-                                <img src="./vendors/img/features-7.jpg" alt="">
+                                <div class="section-features__picture">
+                                    <img src="./vendors/img/features-7.jpg" alt="">
+                                </div>
                             </a>
                         </li>
                         <li class="section-features__item">
                             <a href="" class="section-features__link">
-                                <img src="./vendors/img/features-8.jpg" alt="">
+                                <div class="section-features__picture">
+                                    <img src="./vendors/img/features-8.jpg" alt="">
+                                </div>
                             </a>
                         </li>
                         <li class="section-features__item">
                             <a href="" class="section-features__link">
-                                <img src="./vendors/img/features-9.jpg" alt="">
+                                <div class="section-features__picture">
+                                    <img src="./vendors/img/features-9.jpg" alt="">
+                                </div>
                             </a>
                         </li>
                         <li class="section-features__item">
                             <a href="" class="section-features__link">
-                                <img src="./vendors/img/features-10.jpg" alt="">
+                                <div class="section-features__picture">
+                                    <img src="./vendors/img/features-10.jpg" alt="">
+                                </div>
                             </a>
                         </li>
                         <li class="section-features__item">
                             <a href="" class="section-features__link">
-                                <img src="./vendors/img/features-11.jpg" alt="">
+                                <div class="section-features__picture">
+                                    <img src="./vendors/img/features-11.jpg" alt="">
+                                </div>
                             </a>
                         </li>
                         <li class="section-features__item">
                             <a href="" class="section-features__link">
-                                <img src="./vendors/img/features-12.jpg" alt="">
+                                <div class="section-features__picture">
+                                    <img src="./vendors/img/features-12.jpg" alt="">
+                                </div>
                             </a>
                         </li>
                         <li class="section-features__item">
                             <a href="" class="section-features__link">
-                                <img src="./vendors/img/features-13.jpg" alt="">
+                                <div class="section-features__picture">
+                                    <img src="./vendors/img/features-13.jpg" alt="">
+                                </div>
                             </a>
                         </li>
                         <li class="section-features__item">
                             <a href="" class="section-features__link">
-                                <img src="./vendors/img/features-14.jpg" alt="">
+                                <div class="section-features__picture">
+                                    <img src="./vendors/img/features-14.jpg" alt="">
+                                </div>
                             </a>
                         </li>
                         <li class="section-features__item">
                             <a href="" class="section-features__link">
-                                <img src="./vendors/img/features-15.jpg" alt="">
+                                <div class="section-features__picture">
+                                    <img src="./vendors/img/features-15.jpg" alt="">
+                                </div>
                             </a>
                         </li>
                         <li class="section-features__item">
                             <a href="" class="section-features__link">
-                                <img src="./vendors/img/features-16.jpg" alt="">
+                                <div class="section-features__picture">
+                                    <img src="./vendors/img/features-16.jpg" alt="">
+                                </div>
                             </a>
                         </li>
                         <li class="section-features__item">
                             <a href="" class="section-features__link">
-                                <img src="./vendors/img/features-17.jpg" alt="">
+                                <div class="section-features__picture">
+                                    <img src="./vendors/img/features-17.jpg" alt="">
+                                </div>
                             </a>
                         </li>
                         <li class="section-features__item">
                             <a href="" class="section-features__link">
-                                <img src="./vendors/img/features-18.jpg" alt="">
+                                <div class="section-features__picture">
+                                    <img src="./vendors/img/features-18.jpg" alt="">
+                                </div>
                             </a>
                         </li>
                         <li class="section-features__item">
                             <a href="" class="section-features__link">
-                                <img src="./vendors/img/features-19.jpg" alt="">
+                                <div class="section-features__picture">
+                                    <img src="./vendors/img/features-19.jpg" alt="">
+                                </div>
                             </a>
                         </li>
                         <li class="section-features__item">
                             <a href="" class="section-features__link">
-                                <img src="./vendors/img/features-20.jpg" alt="">
+                                <div class="section-features__picture">
+                                    <img src="./vendors/img/features-20.jpg" alt="">
+                                </div>
                             </a>
                         </li>
                     </ul>
                 </div>
             </section>
-
 
             <!-- Element -->
             <section id="section-elements">
@@ -1049,11 +1686,12 @@
                             <b></b>
                         </h3>
                     </div>
+
                     <ul class="common-product__list">
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-1.svg" alt="">
                                     </div>
     
@@ -1065,10 +1703,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-2.svg" alt="">
                                     </div>
     
@@ -1080,10 +1718,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-3.svg" alt="">
                                     </div>
     
@@ -1095,10 +1733,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-4.svg" alt="">
                                     </div>
     
@@ -1110,10 +1748,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-5.svg" alt="">
                                     </div>
     
@@ -1125,10 +1763,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-6.svg" alt="">
                                     </div>
     
@@ -1140,10 +1778,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-7.svg" alt="">
                                     </div>
     
@@ -1155,10 +1793,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-8.svg" alt="">
                                     </div>
     
@@ -1170,10 +1808,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-9.svg" alt="">
                                     </div>
     
@@ -1185,10 +1823,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-10.svg" alt="">
                                     </div>
     
@@ -1200,10 +1838,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-11.svg" alt="">
                                     </div>
     
@@ -1215,10 +1853,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-12.svg" alt="">
                                     </div>
     
@@ -1230,10 +1868,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-13.svg" alt="">
                                     </div>
     
@@ -1245,10 +1883,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-14.svg" alt="">
                                     </div>
     
@@ -1260,10 +1898,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-15.svg" alt="">
                                     </div>
     
@@ -1275,10 +1913,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-16.svg" alt="">
                                     </div>
     
@@ -1290,10 +1928,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-17.svg" alt="">
                                     </div>
     
@@ -1305,10 +1943,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-18.svg" alt="">
                                     </div>
     
@@ -1320,10 +1958,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-19.svg" alt="">
                                     </div>
     
@@ -1335,10 +1973,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-20.svg" alt="">
                                     </div>
     
@@ -1350,10 +1988,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-21.svg" alt="">
                                     </div>
     
@@ -1365,10 +2003,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-22.svg" alt="">
                                     </div>
     
@@ -1380,10 +2018,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-23.svg" alt="">
                                     </div>
     
@@ -1395,10 +2033,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-24.svg" alt="">
                                     </div>
     
@@ -1410,10 +2048,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-25.svg" alt="">
                                     </div>
     
@@ -1425,10 +2063,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-26.svg" alt="">
                                     </div>
     
@@ -1440,10 +2078,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-27.svg" alt="">
                                     </div>
     
@@ -1455,10 +2093,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-28.svg" alt="">
                                     </div>
     
@@ -1470,10 +2108,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-29.svg" alt="">
                                     </div>
     
@@ -1485,10 +2123,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-30.svg" alt="">
                                     </div>
     
@@ -1500,10 +2138,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-31.svg" alt="">
                                     </div>
     
@@ -1515,10 +2153,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-32.svg" alt="">
                                     </div>
     
@@ -1530,10 +2168,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-33.svg" alt="">
                                     </div>
     
@@ -1545,10 +2183,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-34.svg" alt="">
                                     </div>
     
@@ -1560,10 +2198,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-35.svg" alt="">
                                     </div>
     
@@ -1575,10 +2213,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="small-common-product__item">
+                        <li class="small-common-product__item section-elements__item">
                             <a href="#" class="common-product__link">
-                                <div class="common-box__item">
-                                    <div class="common-box__img">
+                                <div class="common-product__box">
+                                    <div class="common-product__img">
                                         <img src="./vendors/img/elements-36.svg" alt="">
                                     </div>
     
@@ -1592,38 +2230,44 @@
                         </li>
                     </ul>
 
-                    <a href="#" class="common-btn section-elements__btn m-top-22">
-                        BUY FLATSOME NOW
-                    </a>
+                    <div class="d-flex">
+                        <a href="#" class="common-btn section-elements__btn m-top-22 reveal">
+                            BUY FLATSOME NOW
+                            <i class="icon-shopping-basket reveal-icon hide-on-mobile-tablet"></i>
+                        </a>
+                    </div>
                 </div>
             </section>
         </div>
          
         <footer>
-            <div class="d-flex-between-center inner1">
+            <div class="d-flex-between-center inner1 footer-content">
                 <div class="footer-left">
-                    <ul class="footer-nav d-flex-between-center">
-                        <li class="footer-nav__item">
-                            <a href="#" class="footer-nav__link">ABOUT</a>
-                        </li>
-                        <li class="footer-nav__item">
-                            <a href="#" class="footer-nav__link">OUR STORES</a>
-                        </li>
-                        <li class="footer-nav__item">
-                            <a href="#" class="footer-nav__link">BLOG</a>
-                        </li>
-                        <li class="footer-nav__item">
-                            <a href="#" class="footer-nav__link">CONTACT</a>
-                        </li>
-                        <li class="footer-nav__item">
-                            <a href="#" class="footer-nav__link">FAQ</a>
-                        </li>
-                    </ul>
+                    <nav class="footer-nav">
+                        <ul class="footer-menu d-flex-between-center">
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">ABOUT</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">OUR STORES</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">BLOG</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">CONTACT</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">FAQ</a>
+                            </li>
+                        </ul>
+                    </nav>
 
                     <div class="footer-left__copyright">
-                        <p>Copyright 2022 © Flatsome Theme</p>
+                        <p>Copyright 2022 © <strong>Flatsome Theme</strong></p>
                     </div>
                 </div>
+
                 <ul class="footer-payment d-flex-between-center p-top-bottom-10-15">
                     <li class="footer-payment__element">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 32"> <path d="M10.781 7.688c-0.251-1.283-1.219-1.688-2.344-1.688h-8.376l-0.061 0.405c5.749 1.469 10.469 4.595 12.595 10.501l-1.813-9.219zM13.125 19.688l-0.531-2.781c-1.096-2.907-3.752-5.594-6.752-6.813l4.219 15.939h5.469l8.157-20.032h-5.501l-5.062 13.688zM27.72 26.061l3.248-20.061h-5.187l-3.251 20.061h5.189zM41.875 5.656c-5.125 0-8.717 2.72-8.749 6.624-0.032 2.877 2.563 4.469 4.531 5.439 2.032 0.968 2.688 1.624 2.688 2.499 0 1.344-1.624 1.939-3.093 1.939-2.093 0-3.219-0.251-4.875-1.032l-0.688-0.344-0.719 4.499c1.219 0.563 3.437 1.064 5.781 1.064 5.437 0.032 8.97-2.688 9.032-6.843 0-2.282-1.405-4-4.376-5.439-1.811-0.904-2.904-1.563-2.904-2.499 0-0.843 0.936-1.72 2.968-1.72 1.688-0.029 2.936 0.314 3.875 0.752l0.469 0.248 0.717-4.344c-1.032-0.406-2.656-0.844-4.656-0.844zM55.813 6c-1.251 0-2.189 0.376-2.72 1.688l-7.688 18.374h5.437c0.877-2.467 1.096-3 1.096-3 0.592 0 5.875 0 6.624 0 0 0 0.157 0.688 0.624 3h4.813l-4.187-20.061h-4zM53.405 18.938c0 0 0.437-1.157 2.064-5.594-0.032 0.032 0.437-1.157 0.688-1.907l0.374 1.72c0.968 4.781 1.189 5.781 1.189 5.781-0.813 0-3.283 0-4.315 0z"></path> </svg>
@@ -1644,9 +2288,10 @@
             </div>
         </footer>
 
-        <div class="moveToTop">
-            <img src="" alt="">
-        </div>
+        
+        
+
+        <button class="scrollTopBtn" onclick="scrollToTop();"><i class="icon-angle-up"></i></button>
     </div>
 </body>
 <script src="./js/jquery-3.6.0.min.js"></script>
