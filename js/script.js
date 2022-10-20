@@ -48,7 +48,6 @@ function closeLightBox() {
 // reveal on load page
 $(document).ready(function(){
   window.addEventListener("scroll", reveal);
-
   reveal();
 })
 
@@ -73,7 +72,6 @@ function scrollIntro() {
 }
 
 
-
 // function on scroll
 $(document).ready(function(){
   window.onscroll = function(){
@@ -81,7 +79,6 @@ $(document).ready(function(){
     scrollFunction();
   }
 })
-
 
 
 // show fixed header 
@@ -92,7 +89,6 @@ function showHeaderFixed(){
     $('.header-bottom').removeClass('active');
   }
 }
-
 
 
 // Scroll to Top

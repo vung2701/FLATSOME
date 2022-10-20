@@ -410,7 +410,6 @@
     transform: translateX(-50%);
     padding: 0 0 40px;
     display: inline-block;
-    height: calc(100vh - 80px);
 }
 
 .lightbox__img img{
@@ -444,7 +443,7 @@
     font-family: "Font Awesome 5 Free";
     content: "\f105";
     font-weight: 700;
-    font-size: 35px;
+    font-size: 30px;
     position: fixed;
     top: 50%;
     right: 2%; 
@@ -454,7 +453,7 @@
     font-family: "Font Awesome 5 Free";
     content: "\f104";
     font-weight: 700;
-    font-size: 35px;
+    font-size: 30px;
     position: fixed;
     top: 50%;
     left: 2%;
