@@ -396,27 +396,49 @@
     opacity: 1;
 }
 
+/* Light box */
+
 .lightbox__list {
     position: fixed;
-    top: 30px;
+    top: 50%;
+    transform: translateY(-50%);
     width: 100%;
+    height: 80%;
     z-index: 6;
     display: none;
 }
+
+.active.lightbox__list {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.active .slick-list {
+    width: 70%;
+}
+
+.active .slick-track {
+    top: 5%;
+}
+
 
 .lightbox__img {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     padding: 0 0 40px;
+    width: 100%;
+    height: 100%;
     display: inline-block;
 }
 
 .lightbox__img img{
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
     max-width: 100%;
 }
+
 
 .lightbox__number {
     position: absolute;
@@ -458,9 +480,6 @@
     top: 50%;
     left: 2%;
 }
-
-
-
 
 /* Feature */
 .section-features__list {

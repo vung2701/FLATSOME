@@ -205,6 +205,14 @@
     .footer-left__copyright {
         text-align: center;
     }
+
+        .active .slick-list {
+        width: 80%;
+    }
+
+    .active .slick-track {
+        top: 20%;
+    }
 }
 
 /* Tablet > 550px And < 850px */
@@ -213,6 +221,8 @@
     .small-common-product__item {
         width: calc(33.33% - 9.8px*2);
     }
+
+
 
 }
 

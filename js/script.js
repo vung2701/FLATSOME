@@ -24,7 +24,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.section-showcase__item').click(function(){
     var currentSlide = $(this).attr('slideId');
-    $('.lightbox__list').css('display', 'block');
+    $('.lightbox__list').addClass('active');
     $('.lightbox-overlay').css('display', 'block');
     $('.lightbox__list').slick({
       infinite: true,
@@ -32,14 +32,15 @@ $(document).ready(function(){
       slidesToshow: 1,
       slidesToScroll: 1,
       initialSlide: currentSlide - 1,
+      speed: 50,
     });
-
+    
   });
 })
 
 function closeLightBox() {
   $('.lightbox-overlay').css('display', 'none');
-  $('.lightbox__list').css('display', 'none');
+  $('.lightbox__list').removeClass('active');
   $('.lightbox__list').slick('unslick');
 }
 
